@@ -1,6 +1,6 @@
 {
   "name": "@ledecmf/structured-editor",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A structured, WYSIWYG editor for LedeCMF with a Medium feel. Based on TipTap/ProseMirror",
   "author": {
     "name": "Jamie Holly"
@@ -27,7 +27,7 @@
   "dependencies": {
     "@ledecmf/editor-core": "^0.1.0",
     "@ledecmf/structured-editor-extensions": "^0.1.4",
-    "@ledecmf/structured-editor-ui": "^0.1.4",
+    "@ledecmf/structured-editor-ui": "^0.1.5",
     "@ledecmf/structured-editor-utils": "^0.1.4",
     "core-js": "^2.6.5",
     "popper.js": "^1.15.0",
