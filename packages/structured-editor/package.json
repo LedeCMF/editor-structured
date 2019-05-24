@@ -1,6 +1,6 @@
 {
   "name": "@ledecmf/structured-editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A structured, WYSIWYG editor for LedeCMF with a Medium feel. Based on TipTap/ProseMirror",
   "author": {
     "name": "Jamie Holly"
@@ -26,21 +26,21 @@
   "module": "dist/editor.esm.js",
   "dependencies": {
     "@ledecmf/editor-core": "^0.1.0",
+    "@ledecmf/structured-editor-extensions": "^0.1.1",
+    "@ledecmf/structured-editor-ui": "^0.1.1",
+    "@ledecmf/structured-editor-utils": "^0.1.1",
     "core-js": "^2.6.5",
     "popper.js": "^1.15.0",
+    "prosemirror-view": "^1.9.5",
     "tiptap": "^1.19.1",
-    "tiptap-extensions": "^1.19.2",
-    "@ledecmf/structured-editor-ui" : "^0.1.0",
-    "@ledecmf/structured-editor-utils" : "^0.1.0",
-    "@ledecmf/structured-editor-extensions" : "^0.1.0",
-    "prosemirror-view" : "^1.9.5"
-   },
+    "tiptap-extensions": "^1.19.2"
+  },
   "peerDependencies": {
+    "prosemirror-model": "^1.0.0",
+    "prosemirror-state": "^1.0.1",
+    "prosemirror-tables": "^0.7.9",
+    "prosemirror-utils": "^0.8.1",
     "vue": "^2.5.17",
-    "vue-template-compiler": "^2.5.17",
-    "prosemirror-model" : "^1.0.0",
-    "prosemirror-state" : "^1.0.1",
-    "prosemirror-tables" : "^0.7.9",
-    "prosemirror-utils": "^0.8.1"
+    "vue-template-compiler": "^2.5.17"
   }
 }
