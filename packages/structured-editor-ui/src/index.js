@@ -1,14 +1,14 @@
-export {default as BlockMenu} from './components/BlockMenu.vue'
-export {default as BlockTypeSelector} from './components/BlockTypeSelector.vue'
-export {default as InsertMenu} from './components/InsertMenu.vue'
-export {default as MenuDropButton} from './components/MenuDropButton.vue'
-export {default as MenuItem} from './components/MenuItem.vue'
-export {default as MenuSeparatorComponent} from './components/MenuSeparator.vue'
-export {default as SelectionMenu} from './components/SelectionMenu.vue'
-export {default as MenuBar} from './components/MenuBar.vue'
-export {default as NodeOptions} from './components/NodeOptions.vue'
-export {default as NodeAlign} from './components/NodeAlign.vue'
-export {default as NodeResizer} from './components/NodeResizer.vue'
+import BlockMenu from './components/BlockMenu.vue'
+import BlockTypeSelector from './components/BlockTypeSelector.vue'
+import InsertMenu from './components/InsertMenu.vue'
+import MenuDropButton from './components/MenuDropButton.vue'
+import MenuItem from './components/MenuItem.vue'
+import MenuSeparatorComponent from './components/MenuSeparator.vue'
+import SelectionMenu from './components/SelectionMenu.vue'
+import MenuBar from './components/MenuBar.vue'
+import NodeOptions from './components/NodeOptions.vue'
+import NodeAlign from './components/NodeAlign.vue'
+import NodeResizer from './components/NodeResizer.vue'
 
 export {default as BlockTypeMenu} from './collections/BlockTypeMenu'
 export {default as EditorMenu} from './collections/EditorMenu'
@@ -16,3 +16,18 @@ export {default as ExtensionMenuItem} from './collections/ExtensionMenuItem'
 export {default as MenuItemCollection} from './collections/MenuItem'
 export {default as MenuSeparator} from './collections/MenuSeparator'
 export {default as InsertMenuCollection} from './collections/InsertMenu'
+
+export default {
+    BlockMenu,
+    BlockTypeSelector,
+    InsertMenu,
+    MenuDropButton,
+    MenuItem,
+    MenuSeparator: MenuSeparatorComponent,
+    SelectionMenu,
+    MenuBar,
+    NodeOptions,
+    NodeAlign,
+    NodeResizer,
+    
+}
