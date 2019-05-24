@@ -60,6 +60,74 @@
         },
 
         computed: {
+            config() {
+                let config = new EditorConfiguration()
+                const bold = new Bold,
+                    italic = new Italic,
+                    underline = new Underline,
+                    strike = new Strike,
+                    link = new Link(),
+                    orderedList = new OrderedList,
+                    bulletList = new BulletList,
+                    heading = new Heading,
+                    blockquote = new Blockquote,
+                    liftBlock = new LiftBlock,
+                    mergeBlock = new MergeBlock,
+                    image = new Image,
+                    hr = new HorizontalRule,
+                    selectParentNode = new SelectParentNode,
+                    figure = new Figure({
+                        caption: true,
+                        align: {
+                            left: true,
+                            center: true,
+                            right: true,
+                        },
+                        resize: true,
+                    }),
+                    insertAbove = new InsertAbove,
+                    insertBelow = new InsertBelow,
+                    table = new Table
+
+                config.extensions.add(bold).
+                    add(italic).
+                    add(underline).
+                    add(strike).
+                    add(link).
+                    add(orderedList).
+                    add(bulletList).
+                    add(new History).
+                    add(heading).
+                    add(blockquote).
+                    add(liftBlock).
+                    add(mergeBlock).
+                    add(image).
+                    add(selectParentNode).
+                    add(figure).
+                    add(hr).
+                    add(insertAbove).
+                    add(insertBelow).
+                    add(table)
+
+                config.selectionMenu.add(bold).add(italic).add(underline).add(strike).add(link)
+                let blockTypes = new BlockTypeMenu()
+                blockTypes.add(heading)
+
+                config.blockMenu.add(blockTypes).
+                    add(blockquote).
+                    add(orderedList).
+                    add(bulletList).
+                    add(liftBlock).
+                    add(mergeBlock).
+                    add(selectParentNode).
+                    add(insertAbove).
+                    add(insertBelow)
+
+                config.insertMenu.quick(blockquote).quick(figure).quick(hr).add(orderedList).
+                    add(bulletList).add(table)
+
+                return config
+            },
         },
 
         data() {

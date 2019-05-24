@@ -3,7 +3,7 @@ import BlockTypeSelector from './components/BlockTypeSelector.vue'
 import InsertMenu from './components/InsertMenu.vue'
 import MenuDropButton from './components/MenuDropButton.vue'
 import MenuItem from './components/MenuItem.vue'
-import MenuSeparatorComponent from './components/MenuSeparator.vue'
+import MenuSeparator from './components/MenuSeparator.vue'
 import SelectionMenu from './components/SelectionMenu.vue'
 import MenuBar from './components/MenuBar.vue'
 import NodeOptions from './components/NodeOptions.vue'
@@ -14,16 +14,16 @@ export {default as BlockTypeMenu} from './collections/BlockTypeMenu'
 export {default as EditorMenu} from './collections/EditorMenu'
 export {default as ExtensionMenuItem} from './collections/ExtensionMenuItem'
 export {default as MenuItemCollection} from './collections/MenuItem'
-export {default as MenuSeparator} from './collections/MenuSeparator'
+export {default as MenuDivider} from './collections/MenuSeparator'
 export {default as InsertMenuCollection} from './collections/InsertMenu'
 
-export default {
+export  {
     BlockMenu,
     BlockTypeSelector,
     InsertMenu,
     MenuDropButton,
     MenuItem,
-    MenuSeparator: MenuSeparatorComponent,
+    MenuSeparator,
     SelectionMenu,
     MenuBar,
     NodeOptions,

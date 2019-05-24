@@ -6,7 +6,7 @@ export {
 
 import StructuredEditor from './components/StructuredEditor.vue'
 
-export const components = {
+export  {
     Editable
 }
 
