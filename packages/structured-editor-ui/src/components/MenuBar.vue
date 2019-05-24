@@ -11,8 +11,8 @@
 </template>
 
 <script>
-    import MenuItem from './MenuItem'
-    import InsertDialog from './InsertDialog'
+    import MenuItem from './MenuItem.vue'
+    import InsertDialog from './InsertDialog.vue'
 
     function addMenuItems(items, newItems) {
         let labels = [];

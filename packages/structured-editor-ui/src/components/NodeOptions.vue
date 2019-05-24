@@ -26,7 +26,7 @@
 
 <script>
     import {EditorButton} from '@ledecmf/editor-core'
-    import NodeResizer from './NodeResizer'
+    import NodeResizer from './NodeResizer.vue'
 
     export default {
         name: 'NodeOptions',

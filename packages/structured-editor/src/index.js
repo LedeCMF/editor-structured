@@ -4,5 +4,6 @@ export {
     default as EditorConfiguration,
 }from './configuration/EditorConfiguration'
 
+import StructuredEditor from './components/StructuredEditor.vue'
 
 export default StructuredEditor

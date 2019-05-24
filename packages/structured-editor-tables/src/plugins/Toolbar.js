@@ -1,6 +1,6 @@
 import {Plugin} from "prosemirror-state"
 import Vue from 'vue';
-import Toolbar from '../components/TableTools';
+import Toolbar from '../components/TableTools.vue';
 import {findParentNode} from 'prosemirror-utils'
 
 let Component = null;

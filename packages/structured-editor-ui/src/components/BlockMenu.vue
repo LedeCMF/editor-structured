@@ -15,7 +15,7 @@
 
 <script>
     import Popper from 'popper.js'
-    import MenuItem from './MenuItem'
+    import MenuItem from './MenuItem.vue'
     import {EditorButton} from '@ledecmf/editor-core'
 
     export default {

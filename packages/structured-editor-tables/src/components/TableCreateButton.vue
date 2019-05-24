@@ -12,7 +12,7 @@
 
 <script>
     import {MenuDropButton} from '@ledecmf/structured-editor-ui'
-    import TableCreateProps from './TableCreateProps'
+    import TableCreateProps from './TableCreateProps.vue'
     import { EditorButton } from '@ledecmf/editor-core'
     import Popper from 'popper.js';
     import vClickOutside from 'v-click-outside'

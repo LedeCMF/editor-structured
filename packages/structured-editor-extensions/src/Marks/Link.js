@@ -2,7 +2,7 @@
 import { Plugin, TextSelection } from 'tiptap'
 import { updateMark, removeMark} from 'tiptap-commands'
 import { getMarkRange } from 'tiptap-utils'
-import LinkButton from './components/LinkButton';
+import LinkButton from './components/LinkButton.vue';
 import Mark from './Mark';
 
 export default class Link extends Mark {

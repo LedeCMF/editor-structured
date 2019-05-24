@@ -10,6 +10,7 @@ import svgo from 'rollup-plugin-svgo'
 const resolve = _path => path.resolve(__dirname, '../../', _path)
 
 function genConfig(opts) {
+   
     const {version} = require(opts.package)
     const banner = `
     /*!

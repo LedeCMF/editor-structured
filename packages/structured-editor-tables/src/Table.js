@@ -24,7 +24,7 @@ import TableNodes from './TableNodes'
 import TableRow from './TableRow'
 import TableHeader from './TableHeader'
 import TableCell from './TableCell'
-import TableCreateButton from './components/TableCreateButton'
+import TableCreateButton from './components/TableCreateButton.vue'
 
 import table from '@mdi/svg/svg/table.svg'
 import column_before from '@mdi/svg/svg/table-column-plus-before.svg'

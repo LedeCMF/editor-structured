@@ -1,7 +1,7 @@
 import MenuItem from './MenuItem'
 import {Node} from '@ledecmf/structured-editor-extensions'
 
-import BlockTypeSelector from '../components/BlockTypeSelector'
+import BlockTypeSelector from '../components/BlockTypeSelector.vue'
 
 class BlockTypeMenu extends MenuItem {
     constructor() {

@@ -16,7 +16,7 @@
 <script>
     import EditorDialog from './EditorDialog'
     import {EditorButton, EditorIcon} from '@ledecmf/editor-core'
-    import MenuItem from './MenuItem'
+    import MenuItem from './MenuItem.vue'
     export default {
         name: 'InsertDialog',
         inject: ['$editor'],

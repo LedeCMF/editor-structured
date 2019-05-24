@@ -10,10 +10,10 @@
 </template>
 
 <script>
-    import MenuItem from './MenuItem'
+    import MenuItem from './MenuItem.vue'
     import {EditorButton} from '@ledecmf/editor-core'
     import {SelectionEvent} from '@ledecmf/structured-editor'
-    import InsertDialog from './InsertDialog'
+    import InsertDialog from './InsertDialog.vue'
 
     export default {
         name: 'InsertMenu',

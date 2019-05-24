@@ -1,6 +1,7 @@
 <template>
     <div class="table-toolbar" v-if="node">
         <editor-button v-for="(data, cmd) in commands"
+                       :key="cmd"
                        :icon="data.icon"
                        :label="data.label"
                        @click="command(cmd)"></editor-button>

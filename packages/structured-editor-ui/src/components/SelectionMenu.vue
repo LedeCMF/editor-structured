@@ -13,7 +13,7 @@
 </template>
 <script>
     import Popper from 'popper.js'
-    import MenuItem from './MenuItem'
+    import MenuItem from './MenuItem.vue'
     import { findDomRefAtPos } from 'prosemirror-utils';
 
     export default {

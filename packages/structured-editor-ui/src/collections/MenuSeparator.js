@@ -1,5 +1,5 @@
 import MenuItem from './MenuItem'
-import MenuSeparatorComponent from '../components/MenuSeparator';
+import MenuSeparatorComponent from '../components/MenuSeparator.vue';
 class MenuSeparator extends MenuItem{
     constructor() {
         super(null, null, null)
