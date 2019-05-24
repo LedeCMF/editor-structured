@@ -1,0 +1,90 @@
+@import '_variables.scss';
+@import 'partials/selection_menu';
+@import 'partials/block_menu';
+@import 'partials/insert_menu';
+@import 'partials/figure';
+
+.lede-structured-editor {
+
+  position: relative;
+  box-sizing: border-box;
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  &.has-focus {
+    //outline: 1px solid #aaaaaa;
+  }
+
+  .ProseMirror {
+    p {
+      //margin: 0 0 10px 0;
+    }
+    p.is-empty:before {
+      content: attr(data-empty-text);
+      float: left;
+      color: #aaa;
+      pointer-events: none;
+      height: 0;
+      font-style: italic;
+
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .editor-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  [x-arrow] {
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $menu_background;
+  }
+
+  [x-placement|="bottom"] {
+    margin-top: 10px;
+
+    [x-arrow] {
+      top: -20px;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+    }
+  }
+
+  [x-placement|="top"] {
+    margin-bottom: 10px;
+
+    [x-arrow] {
+      bottom: -20px;
+
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.lede-editable.is-empty:not(:focus):before{
+  content: attr(placeholder);
+  color:grey;
+  font-style:italic;
+
+}

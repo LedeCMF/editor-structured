@@ -1,0 +1,48 @@
+@import '../variables';
+
+.lede-block-menu {
+  position: absolute;
+  left: -36px;
+  z-index: 100;
+  width: 24px;
+  height: 24px;
+  .menu-inner {
+    background: $menu_background;
+    display: flex;
+    color: #fff;
+    border-radius: 4px;
+    button {
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      padding: 5px;
+
+      .editor-icon {
+        fill: white;
+      }
+
+      &.is-active {
+        color: $selection_active;
+
+        .editor-icon {
+          fill: $selection_active;
+        }
+
+      }
+    }
+  }
+
+  .lede-block-selector {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding:5px;
+    select {
+      background-color: #fff;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      padding: 0;
+      height: 28px;
+    }
+  }
+}

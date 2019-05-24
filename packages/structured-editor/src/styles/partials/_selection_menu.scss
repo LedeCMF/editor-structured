@@ -1,0 +1,44 @@
+@import '../variables';
+
+.lede-selection-menu {
+
+  position: absolute;
+  .selection-marker {
+    position: absolute;
+    width:0;
+    height: 0;
+
+  }
+
+  .menu-inner {
+    background: $menu_background;
+    display: inline-flex;
+    color:#fff;
+    border-radius: 4px;
+  }
+
+  button {
+    color:#fff;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    .editor-icon {
+      fill: white;
+    }
+    &.is-active {
+      color:$selection_active;
+      .editor-icon {
+        fill: $selection_active;
+      }
+
+    }
+  }
+}
+
+.menu-drop-button {
+  display: flex;
+  .button-body {
+    padding: 3px;
+    display: flex;
+  }
+}

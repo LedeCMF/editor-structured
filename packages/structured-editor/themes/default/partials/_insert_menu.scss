@@ -1,0 +1,13 @@
+@import '../variables';
+
+.lede-insert-menu {
+  .lede-editor-button:hover {
+    svg {
+      fill: #222;
+    }
+  }
+
+  svg {
+    fill: #888;
+  }
+}

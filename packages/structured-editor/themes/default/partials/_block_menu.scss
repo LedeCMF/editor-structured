@@ -1,0 +1,33 @@
+@import '../variables';
+
+.lede-block-menu {
+  .menu-inner {
+    background: $menu_background;
+    color: #fff;
+    button {
+      color: #fff;
+
+      .editor-icon {
+        fill: white;
+      }
+
+      &.is-active {
+        color: $selection_active;
+
+        .editor-icon {
+          fill: $selection_active;
+        }
+
+      }
+    }
+  }
+
+  .lede-block-selector {
+
+    select {
+      background-color: #fff;
+      border: 1px solid #ced4da;
+
+    }
+  }
+}

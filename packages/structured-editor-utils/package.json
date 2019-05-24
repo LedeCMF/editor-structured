@@ -1,0 +1,29 @@
+{
+  "name": "@ledecmf/structured-editor-utils",
+  "version": "0.1.0",
+  "description": "Utilities for the LedeCMF structured editor",
+  "author": {
+    "name": "Jamie Holly"
+  },
+  "repository": "https://github.com/LedeCMF/structured-editor",
+  "bugs": "https://github.com/LedeCMF/structured-editor/issues",
+  "sideEffects": false,
+  "keywords": [
+    "ledecmf",
+    "codemirror",
+    "html",
+    "editor",
+    "vue"
+  ],
+  "license": "MIT",
+  "private": false,
+  "main": "dist/utils.common.js",
+  "module": "dist/utils.esm.js",
+  "dependencies": {
+
+   },
+  "peerDependencies": {
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

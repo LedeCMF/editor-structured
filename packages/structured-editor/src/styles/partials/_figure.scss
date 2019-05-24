@@ -1,0 +1,16 @@
+.lede-figure-node {
+  display: table;
+
+  img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    width: 100%;
+    display: table-caption;
+    caption-side: bottom;
+    font-style: italic;
+    color: #888;
+
+  }
+}
