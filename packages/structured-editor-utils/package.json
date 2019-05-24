@@ -1,6 +1,6 @@
 {
   "name": "@ledecmf/structured-editor-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Utilities for the LedeCMF structured editor",
   "author": {
     "name": "Jamie Holly"
