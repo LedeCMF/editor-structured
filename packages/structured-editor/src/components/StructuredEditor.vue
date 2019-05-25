@@ -36,7 +36,7 @@
 
         props: {
             config: {
-                type: EditorConfiguration,
+                type: [Object, EditorConfiguration],
                 required: true,
             },
             value: {

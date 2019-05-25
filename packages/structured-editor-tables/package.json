@@ -24,12 +24,12 @@
   "main": "dist/tables.common.js",
   "module": "dist/tables.esm.js",
   "dependencies": {
-    "@ledecmf/editor-core": "^0.1.0",
-    "@ledecmf/structured-editor": "^0.1.5"
+
   },
   "peerDependencies": {
     "vue": "^2.5.17",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "@ledecmf/editor-core": "^0.1.0"
   },
   "devDependencies": {
     "rollup-plugin-svgo": "^1.0.2"

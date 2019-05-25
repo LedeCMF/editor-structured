@@ -5,7 +5,7 @@
                                     placeholder="Write something amazing"
                                     @update="update"
                                     ref="editor"
-                                    :menu-bar="'auto'"
+                                    :menu-bar="true"
             ></lede-structured-editor>
         </div>
         <br style="clear:both">
@@ -137,7 +137,7 @@
                 json: '',
                 html: '',
                 value: //'<p>Line</p><p>Ja,mie<a href="http://google.com"></a>woo</p><figure class="align-left"><img src="/assets/images/weaver.jpg" /><figcaption>Caption</figcaption></figure><p>Please aligh right</p>' +
-                //    '<ul><li>List item 1</li><li>List item 2</li></ul>' +
+                   '<ul><li><b>List item 1</b></li><li>List item 2</li></ul>' +
                     '<table><tr><th>Head 1</th><th>Head 2</th></tr><tr><td>Col 1</td><td>Col 2</td></tr></table>' +
                     '<table><tr><th>Head 1</th><th>Head 2</th></tr><tr><td>Col 1</td><td>Col 2</td></tr></table>',
 

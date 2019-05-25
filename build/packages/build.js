@@ -24,7 +24,7 @@ function write(dest, code, zip) {
       console.log(`${blue(path.relative(process.cwd(), dest))} ${getSize(code)}${extra || ''}`)
       resolve()
     }
-
+    
     fs.writeFile(dest, code, error => {
       if (error) return reject(error)
       if (zip) {
@@ -42,19 +42,19 @@ function write(dest, code, zip) {
 function buildEntry({ input, output }) {
   const isProd = /min\.js$/.test(output.file)
   return rollup(input)
-    .then(bundle => bundle.generate(output))
-    .then(response => {
-      if (isProd) {
-        const minified = Terser.minify(response.output[0].code, {
-          output: {
-            preamble: output.banner,
-            ascii_only: true,
-          },
-        }).code
-        return write(output.file, minified, true)
-      }
-      return write(output.file, response.output[0].code)
-    })
+      .then(bundle => bundle.generate(output))
+      .then(response => {
+        if (isProd) {
+          const minified = Terser.minify(response.output[0].code, {
+            output: {
+              preamble: output.banner,
+              ascii_only: true,
+            },
+          }).code
+          return write(output.file, minified, true)
+        }
+        return write(output.file, response.output[0].code)
+      })
 }
 
 function build(builds) {
@@ -62,11 +62,11 @@ function build(builds) {
   const total = builds.length
   const next = () => {
     const distPath = path.dirname(builds[built].output.file)
-
+    
     if (!fs.existsSync(distPath)) {
       fs.mkdirSync(distPath)
     }
-
+    
     buildEntry(builds[built]).then(() => {
       built++
       if (built < total) {
@@ -74,7 +74,7 @@ function build(builds) {
       }
     }).catch(logError)
   }
-
+  
   next()
 }
 

@@ -3,7 +3,8 @@
          :style="{top: isStuck ? settings.offset + 'px' : 'auto', width: width}">
         <div class="menu-inner" ref="menu">
             <template v-for="(item, idx) in items">
-                <insert-dialog v-if="item === 'insert-dialog'" :menu="config.insertMenu" :editor="editor"></insert-dialog>
+                <menu-separator v-if="item==='divider'"></menu-separator>
+                <insert-dialog v-else-if="item === 'insert-dialog'" :menu="config.insertMenu" :editor="editor"></insert-dialog>
                 <menu-item v-else :item="item" :key="idx" :editor="editor"></menu-item>
             </template>
         </div>
@@ -13,6 +14,7 @@
 <script>
     import MenuItem from './MenuItem.vue'
     import InsertDialog from './InsertDialog.vue'
+    import MenuSeparator from './MenuSeparator'
 
     function addMenuItems(items, newItems) {
         let labels = [];
@@ -31,7 +33,9 @@
 
     export default {
         name: 'MenuBar',
-        components: {InsertDialog, MenuItem},
+        components: {
+            MenuSeparator,
+            InsertDialog, MenuItem},
         inject: ['$editor'],
         provide() {
             return {
@@ -59,6 +63,7 @@
             items() {
                 let items = []
                 items = addMenuItems(items, this.config.selectionMenu.all())
+                items.push('divider')
                 items = addMenuItems(items, this.config.insertMenu.quickItems())
                 items.push('insert-dialog')
                 items = addMenuItems(items, this.config.blockMenu.all())

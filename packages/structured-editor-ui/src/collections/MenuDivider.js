@@ -1,6 +1,6 @@
 import MenuItem from './MenuItem'
-import MenuSeparatorComponent from '../components/MenuSeparator.vue';
-class MenuSeparator extends MenuItem{
+import MenuSeparator from '../components/MenuSeparator.vue';
+class MenuDivider extends MenuItem{
     constructor() {
         super(null, null, null)
     }
@@ -10,8 +10,8 @@ class MenuSeparator extends MenuItem{
     }
     
     component() {
-        return MenuSeparatorComponent;
+        return MenuSeparator;
     }
 }
 
-export default MenuSeparator
+export default MenuDivider

@@ -17,11 +17,9 @@
   ],
   "license": "MIT",
   "private": false,
-  "main": "dist/ui.common.js",
+  "main": "src/index.js",
   "module": "dist/ui.esm.js",
   "dependencies": {
-    "@ledecmf/editor-core": "^0.1.0",
-    "@ledecmf/structured-editor-extensions": "^0.1.4",
     "@ledecmf/structured-editor-utils": "^0.1.4",
     "popper.js": "^1.15.0",
     "v-click-outside": "^2.1.3"

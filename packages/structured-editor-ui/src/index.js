@@ -14,7 +14,7 @@ export {default as BlockTypeMenu} from './collections/BlockTypeMenu'
 export {default as EditorMenu} from './collections/EditorMenu'
 export {default as ExtensionMenuItem} from './collections/ExtensionMenuItem'
 export {default as MenuItemCollection} from './collections/MenuItem'
-export {default as MenuDivider} from './collections/MenuSeparator'
+export {default as MenuDivider} from './collections/MenuDivider'
 export {default as InsertMenuCollection} from './collections/InsertMenu'
 
 export  {

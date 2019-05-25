@@ -24,6 +24,7 @@
   "sideEffects": false,
   "main": "dist/editor.common.js",
   "module": "dist/editor.esm.js",
+  "unpkg": "dist/editor.js",
   "dependencies": {
     "@ledecmf/editor-core": "^0.1.0",
     "@ledecmf/structured-editor-extensions": "^0.1.4",
@@ -36,10 +37,6 @@
     "tiptap-extensions": "^1.19.2"
   },
   "peerDependencies": {
-    "prosemirror-model": "^1.0.0",
-    "prosemirror-state": "^1.0.1",
-    "prosemirror-tables": "^0.7.9",
-    "prosemirror-utils": "^0.8.1",
     "vue": "^2.5.17",
     "vue-template-compiler": "^2.5.17"
   },

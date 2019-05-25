@@ -1,6 +1,32 @@
-.lede-editor-menu-bar {
-  background:#fff;
-  z-index: 10;
-  border-bottom:1px solid #ccc;
+@import '../variables';
 
+.lede-editor-menu-bar {
+  background:$menubar_background;
+  z-index: 10;
+  border-bottom:1px solid $menubar_border_color;
+  color: $menubar_color;
+  padding-bottom: 4px;
+  svg {
+    fill: $menubar_color;
+  }
+
+  button:hover {
+    background:$menubar_hover_color;
+  }
+  button.is-active {
+    svg {
+      fill: $menubar_active_color;
+    }
+  }
+
+  .menu-separator {
+    margin:0 7px;
+    border-left:1px solid $menubar_divider_color;
+    height: 18px;
+    width: 1px;
+  }
+
+  .lede-block-selector {
+    margin:0 4px;
+  }
 }
