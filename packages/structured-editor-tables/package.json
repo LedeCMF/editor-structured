@@ -1,6 +1,6 @@
 {
   "name": "@ledecmf/structured-editor-tables",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Table extension for the LedeCMF structured editor",
   "author": {
     "name": "Jamie Holly"
@@ -23,13 +23,10 @@
   "sideEffects": false,
   "main": "dist/tables.common.js",
   "module": "dist/tables.esm.js",
-  "dependencies": {
-
-  },
   "peerDependencies": {
+    "@ledecmf/editor-core": "^0.1.0",
     "vue": "^2.5.17",
-    "vue-template-compiler": "^2.5.17",
-    "@ledecmf/editor-core": "^0.1.0"
+    "vue-template-compiler": "^2.5.17"
   },
   "devDependencies": {
     "rollup-plugin-svgo": "^1.0.2"
