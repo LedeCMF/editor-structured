@@ -14,7 +14,7 @@
 <script>
     import MenuItem from './MenuItem.vue'
     import InsertDialog from './InsertDialog.vue'
-    import MenuSeparator from './MenuSeparator'
+    import MenuSeparator from './MenuSeparator.vue'
 
     function addMenuItems(items, newItems) {
         let labels = [];
